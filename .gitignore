@@ -1,0 +1,21 @@
+
+# git
+.gitignore
+!/.gitignore
+
+# eclipse
+.settings/
+.classpath
+.factorypath
+.project
+
+# vscode
+.vscode/
+
+bin/
+build/
+target/
+
+# npm
+/pages/**/node_modules/
+/pages/**/package-lock.json

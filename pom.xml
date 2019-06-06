@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+   xmlns="http://maven.apache.org/POM/4.0.0"
+
+   xsi:schemaLocation="
+      http://maven.apache.org/POM/4.0.0
+      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>2.1.4.RELEASE</version>
+   </parent>
+
+   <groupId>cc.waa.ng</groupId>
+   <artifactId>ng-platform</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+
+   <packaging>pom</packaging>
+
+   <name>NG Platform</name>
+   <url>http://ng.waa.cc</url>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.0.0</version>
+            <dependencies>
+               <dependency>
+                  <groupId>com.puppycrawl.tools</groupId>
+                  <artifactId>checkstyle</artifactId>
+                  <version>8.20</version>
+               </dependency>
+            </dependencies>
+            <configuration>
+               <configLocation>.codestyle/checkstyle.xml</configLocation>
+            </configuration>
+            <executions>
+               <execution>
+                  <id>checkstyle</id>
+                  <phase>validate</phase>
+                  <goals>
+                     <goal>check</goal>
+                  </goals>
+                  <configuration>
+                     <failOnViolation>true</failOnViolation>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+
+   <dependencyManagement>
+      <dependencies>
+         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Greenwich.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.3.5.RELEASE</version>
+         </dependency>
+         <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>org.eclipse.persistence.jpa</artifactId>
+            <version>2.7.4</version>
+         </dependency>
+         <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.12.1</version>
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <modules>
+      <module>ng-server</module>
+      <module>ng-utils</module>
+      <module>ng-model</module>
+      <module>ng-data</module>
+      <module>ng-webapp</module>
+      <module>ng-service</module>
+      <module>ng-tools</module>
+   </modules>
+</project>
