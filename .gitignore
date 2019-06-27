@@ -15,6 +15,7 @@
 bin/
 build/
 target/
+/ng-tools/site-pumper/*.css
 
 # npm
 /pages/**/node_modules/

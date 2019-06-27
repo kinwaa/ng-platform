@@ -22,6 +22,15 @@
 
    <name>NG Platform Model Group</name>
 
+   <dependencies>
+      <!-- 所有model模块都会用到jpa的api -->
+      <dependency>
+         <groupId>javax.persistence</groupId>
+         <artifactId>javax.persistence-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
+
    <modules>
       <module>ng-user-model</module>
    </modules>

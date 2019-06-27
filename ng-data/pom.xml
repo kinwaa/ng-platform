@@ -22,6 +22,15 @@
 
    <name>NG Platform Data(Repository) Group</name>
 
+   <dependencies>
+      <!-- 所有data模块都会用到spring-data-jpa的api -->
+      <dependency>
+         <groupId>org.springframework.data</groupId>
+         <artifactId>spring-data-jpa</artifactId>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
+
    <modules>
       <module>ng-user-data</module>
    </modules>

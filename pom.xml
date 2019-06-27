@@ -84,6 +84,20 @@
       </dependencies>
    </dependencyManagement>
 
+   <dependencies>
+      <!-- 基本所有代码都有可能用到logger，所以在此声明lombok的依赖 -->
+      <dependency>
+         <groupId>org.projectlombok</groupId>
+         <artifactId>lombok</artifactId>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
+
    <modules>
       <module>ng-server</module>
       <module>ng-utils</module>

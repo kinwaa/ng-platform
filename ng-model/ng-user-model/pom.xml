@@ -19,4 +19,33 @@
    <artifactId>ng-user-model</artifactId>
 
    <name>NG Platform User Model Module</name>
+
+   <dependencies>
+      <dependency>
+         <groupId>cc.waa.ng</groupId>
+         <artifactId>ng-commons</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.hibernate</groupId>
+         <artifactId>hibernate-core</artifactId>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.eclipse.persistence</groupId>
+         <artifactId>org.eclipse.persistence.jpa</artifactId>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>com.h2database</groupId>
+         <artifactId>h2</artifactId>
+         <scope>test</scope>
+      </dependency>
+   </dependencies>
 </project>

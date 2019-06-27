@@ -19,4 +19,12 @@
    <artifactId>ng-user-data</artifactId>
 
    <name>NG Platform User Data(Repository) Module</name>
+
+   <dependencies>
+      <dependency>
+         <groupId>cc.waa.ng</groupId>
+         <artifactId>ng-user-model</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+   </dependencies>
 </project>
