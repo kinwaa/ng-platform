@@ -12,18 +12,11 @@
 
    <parent>
       <groupId>cc.waa.ng</groupId>
-      <artifactId>ng-platform</artifactId>
+      <artifactId>ng-utils</artifactId>
       <version>0.0.1-SNAPSHOT</version>
    </parent>
 
-   <artifactId>ng-utils</artifactId>
+   <artifactId>ng-test</artifactId>
 
-   <packaging>pom</packaging>
-
-   <name>NG Platform Utils Group</name>
-
-   <modules>
-      <module>ng-commons</module>
-      <module>ng-test</module>
-   </modules>
+   <name>NG Platform Test support Module</name>
 </project>
