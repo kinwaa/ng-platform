@@ -33,5 +33,6 @@
 
    <modules>
       <module>ng-user-model</module>
+      <module>ng-area-model</module>
    </modules>
 </project>
