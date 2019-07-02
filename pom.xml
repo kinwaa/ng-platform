@@ -103,6 +103,7 @@
       <module>ng-utils</module>
       <module>ng-model</module>
       <module>ng-data</module>
+      <module>ng-docking</module>
       <module>ng-webapp</module>
       <module>ng-service</module>
       <module>ng-tools</module>
