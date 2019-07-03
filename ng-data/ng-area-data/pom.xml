@@ -12,27 +12,19 @@
 
    <parent>
       <groupId>cc.waa.ng</groupId>
-      <artifactId>ng-platform</artifactId>
+      <artifactId>ng-data</artifactId>
       <version>0.0.1-SNAPSHOT</version>
    </parent>
 
-   <artifactId>ng-data</artifactId>
+   <artifactId>ng-area-data</artifactId>
 
-   <packaging>pom</packaging>
-
-   <name>NG Platform Data(Repository) Group</name>
+   <name>NG Platform Area Data(Repository) Module</name>
 
    <dependencies>
-      <!-- 所有data模块都会用到spring-data-jpa的api -->
       <dependency>
-         <groupId>org.springframework.data</groupId>
-         <artifactId>spring-data-jpa</artifactId>
-         <scope>provided</scope>
+         <groupId>cc.waa.ng</groupId>
+         <artifactId>ng-area-model</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
       </dependency>
    </dependencies>
-
-   <modules>
-      <module>ng-user-data</module>
-      <module>ng-area-data</module>
-   </modules>
 </project>
