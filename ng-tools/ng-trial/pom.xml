@@ -12,18 +12,11 @@
 
    <parent>
       <groupId>cc.waa.ng</groupId>
-      <artifactId>ng-platform</artifactId>
+      <artifactId>ng-tools</artifactId>
       <version>0.0.1-SNAPSHOT</version>
    </parent>
 
-   <artifactId>ng-tools</artifactId>
+   <artifactId>ng-trial</artifactId>
 
-   <packaging>pom</packaging>
-
-   <name>NG Platform Tools Group</name>
-
-   <modules>
-      <module>ng-trial</module>
-      <module>site-pumper</module>
-   </modules>
+   <name>NG Platform trial tools</name>
 </project>
