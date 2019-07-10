@@ -34,5 +34,6 @@
    <modules>
       <module>ng-user-data</module>
       <module>ng-area-data</module>
+      <module>ng-school-data</module>
    </modules>
 </project>

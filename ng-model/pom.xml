@@ -34,5 +34,6 @@
    <modules>
       <module>ng-user-model</module>
       <module>ng-area-model</module>
+      <module>ng-school-model</module>
    </modules>
 </project>
